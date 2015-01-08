@@ -132,4 +132,14 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="odoo_field_many2many" value="new_field_ids = fields.Many2many(comodel_name=&quot;&quot;, relation=&quot;&quot;, column1=&quot;&quot;, column2=&quot;&quot;, string=&quot;&quot;, )" description="Add new field of type Many2many" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="odoo_object_inherit" value="class new_module(models.Model):&#10;    _name = 'new_module.new_module'&#10;    _inherit = 'new_module.new_module'&#10;&#10;    name = fields.Char()&#10;" description="Inherit/Extend Existing Odoo Object" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
