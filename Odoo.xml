@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Odoo">
   <template name="odoo_form" value="&lt;record id=&quot;&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;&lt;/field&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &lt;form string=&quot;&quot;&gt;&#10;            &lt;sheet&gt;&#10;                &lt;group&gt;&#10;                    &lt;field name=&quot;name&quot;/&gt;&#10;                &lt;/group&gt;&#10;            &lt;/sheet&gt;&#10;        &lt;/form&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" description="Create Form View" toReformat="false" toShortenFQNames="true">
     <context>
@@ -143,5 +142,25 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="odoo_security_category" value="&lt;record id=&quot;&quot; model=&quot;ir.module.category&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;&lt;/field&gt;&#10;    &lt;field name=&quot;sequence&quot; eval=&quot;1&quot;/&gt;&#10;&lt;/record&gt;" description="Add new Security Category" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="odoo_security_group" value="&lt;record id=&quot;&quot; model=&quot;res.groups&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;&lt;/field&gt;&#10;    &lt;field name=&quot;category_id&quot; ref=&quot;&quot;/&gt;&#10;    &lt;field name=&quot;implied_ids&quot; eval=&quot;[(4, ref('base.group_user'))]&quot;/&gt;&#10;&lt;/record&gt;" description="Create new Group, then assign new permissions" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="odoo_security_rule" value="&lt;record id=&quot;&quot; model=&quot;ir.rule&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;&lt;/field&gt;&#10;    &lt;field ref=&quot;model_name_of_model&quot; name=&quot;model_id&quot;/&gt;&#10;    &lt;field name=&quot;domain_force&quot;&gt;[('', '', )]&lt;/field&gt;&#10;    &lt;field name=&quot;perm_write&quot; eval=&quot;1&quot;/&gt;&#10;    &lt;field name=&quot;perm_create&quot; eval=&quot;1&quot;/&gt;&#10;    &lt;field name=&quot;perm_read&quot; eval=&quot;1&quot;/&gt;&#10;    &lt;field name=&quot;perm_unlink&quot; eval=&quot;1&quot;/&gt;&#10;    &lt;!-- You can attach this rule to a specific group, Or make it Global --&gt;&#10;    &lt;field name=&quot;groups&quot; eval=&quot;[(4, ref('group_id'))]&quot;/&gt;&#10;    &lt;!--&lt;field name=&quot;global&quot; eval=&quot;1&quot;/&gt; --&gt;&#10;&lt;/record&gt;" description="Create new Security Rules" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
 </templateSet>
-
