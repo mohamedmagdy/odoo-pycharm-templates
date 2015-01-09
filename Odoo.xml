@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Odoo">
   <template name="odoo_form" value="&lt;record id=&quot;&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;&lt;/field&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &lt;form string=&quot;&quot;&gt;&#10;            &lt;sheet&gt;&#10;                &lt;group&gt;&#10;                    &lt;field name=&quot;name&quot;/&gt;&#10;                &lt;/group&gt;&#10;            &lt;/sheet&gt;&#10;        &lt;/form&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" description="Create Form View" toReformat="false" toShortenFQNames="true">
     <context>
@@ -72,7 +73,7 @@
       <option name="XML_TEXT" value="true" />
     </context>
   </template>
-  <template name="odoo_object" value="class new_module(models.Model):&#10;    _name = 'new_module.new_module'&#10;&#10;    name = fields.Char()&#10;" description="Create New Odoo Object" toReformat="false" toShortenFQNames="true">
+  <template name="odoo_object" value="class NewModule(models.Model):&#10;    _name = 'new_module.new_module'&#10;    _rec_name = 'name'&#10;    _description = 'New Description'&#10;&#10;    name = fields.Char()&#10;" description="Create New Odoo Object" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
@@ -137,9 +138,10 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="odoo_object_inherit" value="class new_module(models.Model):&#10;    _name = 'new_module.new_module'&#10;    _inherit = 'new_module.new_module'&#10;&#10;    name = fields.Char()&#10;" description="Inherit/Extend Existing Odoo Object" toReformat="false" toShortenFQNames="true">
+  <template name="odoo_object_inherit" value="class NewModule(models.Model):&#10;    _name = 'new_module.new_module'&#10;    _inherit = 'new_module.new_module'&#10;&#10;    name = fields.Char()&#10;" description="Inherit/Extend Existing Odoo Object" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
 </templateSet>
+
