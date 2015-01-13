@@ -163,4 +163,18 @@
       <option name="XML_TEXT" value="true" />
     </context>
   </template>
+  <template name="odoo_notebook" value="&lt;notebook&gt;&#10;    &lt;page string&gt;&#10;        &lt;group&gt;&#10;            &lt;field name=&quot;&quot;/&gt;&#10;        &lt;/group&gt;&#10;    &lt;/page&gt;&#10;&lt;/notebook&gt;" description="Add Notebook and a page" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="odoo_page" value="&lt;page string&gt;&#10;    &lt;group&gt;&#10;        &lt;field name=&quot;&quot;/&gt;&#10;    &lt;/group&gt;&#10;&lt;/page&gt;" description="Add new page" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
 </templateSet>
