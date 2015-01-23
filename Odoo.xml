@@ -122,7 +122,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="odoo_field_datetime" value="new_field = fields.DateTime(string=&quot;&quot;, required=False, )" description="Add new field of type DateTime" toReformat="false" toShortenFQNames="true">
+  <template name="odoo_field_datetime" value="new_field = fields.Datetime(string=&quot;&quot;, required=False, )" description="Add new field of type DateTime" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
