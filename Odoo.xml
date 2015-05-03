@@ -182,4 +182,25 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="odoo_wkf" value="&lt;record id=&quot;&quot; model=&quot;workflow&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;&lt;/field&gt;&#10;    &lt;field name=&quot;osv&quot;&gt;&lt;/field&gt;&#10;    &lt;field name=&quot;on_create&quot;&gt;True&lt;/field&gt;&#10;&lt;/record&gt;" description="Add Workflow" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="odoo_wkf_transition" value="&lt;record id=&quot;&quot; model=&quot;workflow.transition&quot;&gt;&#10;    &lt;field name=&quot;act_from&quot; ref=&quot;&quot;/&gt;&#10;    &lt;field name=&quot;act_to&quot; ref=&quot;&quot;/&gt;&#10;    &lt;field name=&quot;signal&quot;&gt;&lt;/field&gt;&#10;&lt;/record&gt;" description="Add new Transition to an existing Workflow" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="odoo_wkf_activity" value="&lt;record id=&quot;&quot; model=&quot;workflow.activity&quot;&gt;&#10;    &lt;field name=&quot;wkf_id&quot; ref=&quot;&quot;/&gt;&#10;    &lt;!--&lt;field name=&quot;flow_start&quot;&gt;True&lt;/field&gt;--&gt;&#10;    &lt;!--&lt;field name=&quot;flow_stop&quot;&gt;True&lt;/field&gt;--&gt;&#10;    &lt;field name=&quot;name&quot;&gt;&lt;/field&gt;&#10;    &lt;field name=&quot;kind&quot;&gt;function&lt;/field&gt;&#10;    &lt;field name=&quot;action&quot;&gt;METHOD_NAME()&lt;/field&gt;&#10;&lt;/record&gt;" description="Add new Activity" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
 </templateSet>
