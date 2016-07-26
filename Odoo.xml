@@ -234,4 +234,9 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="odoo_declare_qweb_reports" value="&lt;!-- QWeb Reports --&gt;&#10;&lt;!-- NAME &amp; FILE_NAME should be the same --&gt;&#10;        &lt;report&#10;            id=&quot;UNIQUE_REPORT_ID&quot;&#10;            model=&quot;MODEL_WHERE_THE_REPORT_WILL_BE_PRINTED&quot;&#10;            report_type=&quot;qweb-pdf&quot;&#10;            string=&quot;LABEL&quot;&#10;            name=&quot;NAME&quot;&#10;            file=&quot;FILE_NAME&quot;&#10;        /&gt;" description="Add a declaration for new QWeb reports" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
 </templateSet>
