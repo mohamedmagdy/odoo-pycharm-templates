@@ -239,4 +239,7 @@
       <option name="XML_TEXT" value="true" />
     </context>
   </template>
+  <template name="odoo_add_qweb_template" value="&lt;template id=&quot;UNIQUE_ID&quot;&gt;&#10;    &lt;t t-call=&quot;report.html_container&quot;&gt;&#10;        &lt;t t-call=&quot;report.internal_layout&quot;&gt;&#10;        &lt;!-- &lt;t t-call=&quot;report.external_layout&quot;&gt; --&gt;&#10;            &lt;div class=&quot;page&quot;&gt;&#10;                &lt;h2&gt;TITLE FOR YOUR REPORT&lt;/h2&gt;&#10;                &lt;!--&#10;                Build your report here!&#10;                Do it in awesome way ;)&#10;                --&gt;&#10;            &lt;/div&gt;&#10;        &lt;/t&gt;&#10;    &lt;/t&gt;&#10;&lt;/template&gt;&#10;&#10;" description="Add the main structure of the QWeb Reports" toReformat="false" toShortenFQNames="true">
+    <context />
+  </template>
 </templateSet>
