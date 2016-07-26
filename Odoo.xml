@@ -229,4 +229,9 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="odoo_method_compute_field" value="@api.one&#10;@api.depends('FIELDS_NAMES')&#10;def _compute_amount(self):&#10;    &quot;&quot;&quot;&#10;    @api.depends() should contain all fields that will be used in the calculations.&#10;    &quot;&quot;&quot;&#10;    pass" description="Add a method to compute the computed fields" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
