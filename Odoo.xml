@@ -224,4 +224,9 @@
       <option name="XML_TEXT" value="true" />
     </context>
   </template>
+  <template name="odoo_method_onchange" value="@api.onchange('FIELD_NAME')&#10;def _onchange_FIELD_NAME(self):&#10;    pass" description="Add an onchange method" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
