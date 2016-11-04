@@ -210,4 +210,14 @@
   <template name="odoo_search" value="        &lt;record id=&quot;&quot; model=&quot;ir.ui.view&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;&lt;/field&gt;&#10;            &lt;field name=&quot;model&quot;&gt;&lt;/field&gt;&#10;            &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;                &lt;search string=&quot;&quot;&gt;&#10;                    &lt;field name=&quot;name&quot;/&gt;&#10;                &lt;/search&gt;&#10;            &lt;/field&gt;&#10;        &lt;/record&gt;" description="Create Search View" toReformat="false" toShortenFQNames="true">
     <context />
   </template>
+  <template name="odoo_manifest" value="{&#10;    'name': '',&#10;    'version': '',&#10;    'summary': '',&#10;    'description': '',&#10;    'category': '',&#10;    'author': '',&#10;    'website': '',&#10;    'license': '',&#10;    'depends': [''],&#10;    'data': [''],&#10;    'demo': [''],&#10;    'installable': True,&#10;    'auto_install': False,&#10;    'external_dependencies': {&#10;        'python': [''],&#10;    }&#10;}" description="Create Odoo project manifest" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="odoo_import" value="from openerp import models, fields, api, &#10;" description="Add basic Odoo import" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
