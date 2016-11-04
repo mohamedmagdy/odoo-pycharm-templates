@@ -8,7 +8,11 @@ If You are using a linux distribution you can save the XML file in PyCharm files
 
     ~/.PyCharm*/config/templates
 
-and save the XML file there, Then Enjoy your time developing a great Odoo Modules :)
+MacOs X users, look for the templates folder here:
+
+    ~/Library/Preferences/PyCharm*/templates
+
+and save the XML file there. Enjoy your time developing great Odoo Modules :)
 
 ### User Guide
 Here is a little video that's show how you can use this template : https://youtu.be/vytzDo33qdM
