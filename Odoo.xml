@@ -215,7 +215,12 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="odoo_import" value="from openerp import models, fields, api, &#10;" description="Add basic Odoo import" toReformat="false" toShortenFQNames="true">
+  <template name="openerp_import" value="from openerp import models, fields, api, &#10;" description="Add basic Odoo import for old Odoo versions" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="odoo_import" value="from odoo import models, fields, api, &#10;" description="Add basic Odoo import for new Odoo versions" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
