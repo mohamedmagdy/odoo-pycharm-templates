@@ -237,4 +237,14 @@
       <option name="XML" value="true" />
     </context>
   </template>
+  <template name="odoo_onchange" value="@api.onchange('field_name')&#10;def onchange_method(self):&#10;    self.field_name = ''" description="Add onchange method" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python_Class" value="true" />
+    </context>
+  </template>
+  <template name="odoo_xpath_attributes" value="&lt;xpath expr=&quot;//field[@name='']&quot; position=&quot;attributes&quot;&gt;&#10;    &lt;attribute name=&quot;required&quot;&gt;1&lt;/attribute&gt;&#10;    &lt;attribute name=&quot;readonly&quot;&gt;1&lt;/attribute&gt;&#10;&lt;/xpath&gt;" description="Add the structure of xpath with attributes" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
 </templateSet>
