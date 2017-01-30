@@ -9,7 +9,7 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="odoo_data" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;openerp&gt;&#10;    &lt;data&gt;&#10;        &#10;        &#10;    &#10;    &lt;/data&gt;&#10;&lt;/openerp&gt;" description="Create the main tags" toReformat="false" toShortenFQNames="true">
+  <template name="odoo_data" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;odoo&gt;&#10;    &lt;data&gt;&#10;        &#10;        &#10;    &#10;    &lt;/data&gt;&#10;&lt;/odoo&gt;" description="Create the main tags" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XML" value="true" />
     </context>
