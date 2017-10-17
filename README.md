@@ -1,18 +1,35 @@
 # Odoo PyCharm Templates
-### Templates for Odoo in PyCharm
 
-This Templates can help you to develop Odoo Modules Faster and with no Typing Errors
+This templates can help you to develop `Odoo` modules faster and with no Typing Errors.
 
-### Configuration:
-If You are using a linux distribution you can save the XML file in PyCharm files, Just find the path:
+## Installation
 
-    ~/.PyCharm*/config/templates
+### Install from "settings.jar"
 
-MacOs X users, look for the templates folder here:
+1. Download `settings.jar` file: [click here](https://github.com/mohamedmagdy/odoo-pycharm-templates/raw/master/settings.jar)
 
-    ~/Library/Preferences/PyCharm*/templates
+1. Go to `File | Import Settings...` in PyCharm IDE and select the downloaded `settings.jar` file. Click `OK` in the dialog that appears.
 
-and save the XML file there. Enjoy your time developing great Odoo Modules :)
+1. Restart `PyCharmIDE`: Go to `File | Invalidate Chaches / Restart...` menu, and click in `Just Restart` button. The PyCharm IDE will be restart.
 
-### User Guide
+### Manual installation
+
+1. Download `Odoo.xml` file: [click here](https://github.com/mohamedmagdy/odoo-pycharm-templates/raw/master/Odoo.xml)
+
+1. Move the `Odoo.xml` file to *templates* of PyCharm IDE.
+
+    If you are using a Linux distribution you can save the `Odoo.xml` file in PyCharm IDE *templates* folder, just find the path:
+
+    **Linux distribution**
+    * Path: `~/.PyCharm*/config/templates`
+
+    **Mac OS X**
+    * Path: `~/Library/Preferences/PyCharm*/templates`
+
+1. Restart `PyCharmIDE`: Go to `File | Invalidate Chaches / Restart...` menu, and click in `Just Restart` button. The PyCharm IDE will be restart.
+
+Enjoy your time developing great Odoo Modules :)
+
+## User Guide
+
 Here is a little video that's show how you can use this template : https://youtu.be/vytzDo33qdM
