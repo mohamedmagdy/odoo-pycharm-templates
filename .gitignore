@@ -52,3 +52,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# mac OS folder attributes
+.DS_Store
