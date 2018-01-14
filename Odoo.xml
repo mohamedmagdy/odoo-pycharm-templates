@@ -9,7 +9,7 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="odoo_data" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;openerp&gt;&#10;    &lt;data&gt;&#10;        &#10;        &#10;    &#10;    &lt;/data&gt;&#10;&lt;/openerp&gt;" description="Create the main tags" toReformat="false" toShortenFQNames="true">
+  <template name="odoo_data" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;odoo&gt;&#10;    &lt;data&gt;&#10;        &#10;        &#10;    &#10;    &lt;/data&gt;&#10;&lt;/odoo&gt;" description="Create the main tags" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XML" value="true" />
     </context>
@@ -44,9 +44,7 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="odoo_nested_group" value="&lt;group string=&quot;&quot;&gt;&#10;    &lt;group&gt;&#10;        &lt;field name=&quot;&quot;/&gt;&#10;    &lt;/group&gt;&#10;    &lt;group&gt;&#10;        &lt;field name=&quot;&quot;/&gt;&#10;    &lt;/group&gt;&#10;&lt;/group&gt;" description="Create Nested Groups" toReformat="false" toShortenFQNames="true">
-    <context />
-  </template>
+  <template name="odoo_nested_group" value="&lt;group string=&quot;&quot;&gt;&#10;    &lt;group&gt;&#10;        &lt;field name=&quot;&quot;/&gt;&#10;    &lt;/group&gt;&#10;    &lt;group&gt;&#10;        &lt;field name=&quot;&quot;/&gt;&#10;    &lt;/group&gt;&#10;&lt;/group&gt;" description="Create Nested Groups" toReformat="false" toShortenFQNames="true" />
   <template name="odoo_domain" value="domain=&quot;[('', '=', ), ]&quot;" description="Add domain to your field" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XML" value="true" />
@@ -62,7 +60,17 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="odoo_compute_field_integer" value="new_field = fields.Integer(string=&quot;&quot;, compute='_compute_new_field', store=False, readonly=True, copy=False,)" description="Add new field of type Integer" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
   <template name="odoo_field_char" value="new_field = fields.Char(string=&quot;&quot;, required=False, )" description="Add new field of type Char" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="odoo_compute_field_char" value="new_field = fields.Char(string=&quot;&quot;, compute='_compute_new_field', store=False, readonly=True, copy=False,)" description="Add new field of type Integer" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
@@ -72,7 +80,17 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="odoo_compute_field_text" value="new_field = fields.Text(string=&quot;&quot;, compute='_compute_new_field', store=False, readonly=True, copy=False,)" description="Add new field of type Integer" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
   <template name="odoo_field_many2one" value="new_field_id = fields.Many2one(comodel_name=&quot;&quot;, string=&quot;&quot;, required=False, )" description="Add new field of type Many2one" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="odoo_compute_field_many2one" value="new_field = fields.Many2one(string=&quot;&quot;, compute='_compute_new_field', store=False, readonly=True, copy=False,)" description="Add new field of type Integer" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
@@ -82,7 +100,17 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="odoo_compute_field_one2many" value="new_field_ids = fields.One2many(comodel_name=&quot;&quot;, string=&quot;&quot;, required=False, compute='_compute_new_field', store=False, readonly=True, copy=False,)" description="Add new field of type One2many" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
   <template name="odoo_field_boolean" value="is_new_field = fields.Boolean(string=&quot;&quot;,  )" description="Add new field of type Boolean" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="odoo_compute_field_boolean" value="is_new_field = fields.Boolean(string=&quot;&quot;, compute='_compute_new_field', store=False, readonly=True, copy=False,)" description="Add new field of type Boolean" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
@@ -97,7 +125,17 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="odoo_compute_field_float" value="new_field = fields.Float(string=&quot;&quot;,  required=False, compute='_compute_new_field', store=False, readonly=True, copy=False,)" description="Add new field of type Float" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
   <template name="odoo_field_date" value="new_field = fields.Date(string=&quot;&quot;, required=False, )" description="Add new field of type Date" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="odoo_compute_field_date" value="new_field = fields.Date(string=&quot;&quot;, required=False, compute='_compute_new_field', store=False, readonly=True, copy=False,)" description="Add new field of type Date" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
@@ -107,12 +145,27 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="odoo_compute_field_datetime" value="new_field = fields.Datetime(string=&quot;&quot;, required=False, compute='_compute_new_field', store=False, readonly=True, copy=False,)" description="Add new field of type DateTime" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
   <template name="odoo_field_selection" value="state = fields.Selection(string=&quot;&quot;, selection=[('', ''), ('', ''), ], required=False, )" description="Add new field of type Selection" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="odoo_compute_field_selection" value="state = fields.Selection(string=&quot;&quot;, selection=[('', ''), ('', ''), ], required=False, compute='_compute_new_field', store=False, readonly=True, copy=False,)" description="Add new field of type Selection" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
   <template name="odoo_field_many2many" value="new_field_ids = fields.Many2many(comodel_name=&quot;&quot;, relation=&quot;&quot;, column1=&quot;&quot;, column2=&quot;&quot;, string=&quot;&quot;, )" description="Add new field of type Many2many" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="odoo_compute_field_many2many" value="new_field_ids = fields.Many2many(comodel_name=&quot;&quot;, compute='_compute_new_field', store=False, readonly=True, copy=False, string=&quot;&quot;, )" description="Add new field of type Many2many" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
@@ -227,12 +280,52 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="odoo_import" value="from odoo import models, fields, api, &#10;" description="Add basic Odoo import for new Odoo versions" toReformat="false" toShortenFQNames="true">
+  <template name="odoo_import" value="from odoo import api, fields, models &#10;" description="Add basic Odoo import for new Odoo versions" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
   <template name="odoo_xpath" value="&lt;xpath expr=&quot;//field[@name='name']&quot; position=&quot;&quot;&gt;&#10;    &lt;!-- Add your fields or attributes here --&gt;&#10;&lt;/xpath&gt;" description="Add the structure of xpath" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="odoo_onchange" value="@api.onchange('field_name')&#10;def onchange_method(self):&#10;    self.field_name = ''" description="Add onchange method" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python_Class" value="true" />
+    </context>
+  </template>
+  <template name="odoo_xpath_attributes" value="&lt;xpath expr=&quot;//field[@name='']&quot; position=&quot;attributes&quot;&gt;&#10;    &lt;attribute name=&quot;required&quot;&gt;1&lt;/attribute&gt;&#10;    &lt;attribute name=&quot;readonly&quot;&gt;1&lt;/attribute&gt;&#10;&lt;/xpath&gt;" description="Add the structure of xpath with attributes" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="odoo_method_create" value="@api.model&#10;def create(self, values):&#10;    # Add code here&#10;    return super(ClassName, self).create(values)" description="Add a method create" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="odoo_method_write" value="@api.multi&#10;def write(self, values):&#10;    # Add code here  &#10;    return super(ClassName, self).write(values)" description="Add a method write" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="odoo_button" value="&lt;button name=&quot;button_method_name&quot; type=&quot;object&quot; string=&quot;ObjectButton&quot;/&gt;" description="Add Odoo button" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="odoo_field" value="&lt;field name=&quot;name&quot;/&gt;" description="Add commun field on view" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="odoo_field_state" value="&lt;field name=&quot;state&quot; widget=&quot;statusbar&quot; statusbar_visible=&quot;&quot;/&gt;" description="Add state field with progressbar on view" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="odoo_button_box" value="&lt;div class=&quot;oe_button_box&quot; name=&quot;expense_button_box&quot;&gt;&#10;        &lt;button name=&quot;toggle_active&quot; &#10;                type=&quot;object&quot;&#10;                confirm=&quot;(Un)archiving a project automatically (un)archives its tasks and issues. Do you want to proceed?&quot;&#10;                class=&quot;oe_stat_button&quot; &#10;                icon=&quot;fa-archive&quot;&gt;&#10;                &lt;field name=&quot;active&quot; widget=&quot;boolean_button&quot; options='{&quot;terminology&quot;: &quot;archive&quot;}'/&gt;&#10;        &lt;/button&gt;&#10;&lt;/div&gt;" description="Add Button Box on View" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XML" value="true" />
     </context>
