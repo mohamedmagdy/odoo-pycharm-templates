@@ -2,6 +2,9 @@
 
 This templates can help you to develop `Odoo` modules faster and with no Typing Errors.
 
+### YouTube Channel
+https://bit.ly/3cWR9IU
+
 ## Installation
 
 ### Install from "settings.jar"
