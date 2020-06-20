@@ -1,5 +1,9 @@
 # Odoo PyCharm Templates
 
+[![Ad](ads/720X300-2.png)](https://tracking.gitads.io/?campaign=gitads&repo=testrepo&redirect=gitads.io)
+
+
+
 This templates can help you to develop `Odoo` modules faster and with no Typing Errors.
 
 ### YouTube Channel
