@@ -1,6 +1,6 @@
 # Odoo PyCharm Templates
 
-[![Ad](ads/720X300-2.png)](https://tracking.gitads.io/?campaign=gitads&repo=testrepo&redirect=gitads.io)
+[![Ad](ads/720X300-2.png)](https://images.gitads.io/odoo-pycharm-templates)
 
 
 
