@@ -1,11 +1,5 @@
 # Odoo PyCharm Templates
 
-### Odoo PyCharm Templates is being sponsored by the following tool; please help to support us by taking a look and signing up to a free trial
-
-[![Ad](ads/720X300-2.png)](https://images.gitads.io/odoo-pycharm-templates)
-
-
-
 This templates can help you to develop `Odoo` modules faster and with no Typing Errors.
 
 ### YouTube Channel
