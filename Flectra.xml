@@ -1,0 +1,469 @@
+<templateSet group="Flectra">
+  <template name="flectra_form" value="&lt;record id=&quot;view_$res_id$_form&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;view.$res_model$.form&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$res_model$&lt;/field&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &lt;form string=&quot;$string$&quot;&gt;&#10;            &lt;sheet&gt;&#10;                &lt;group&gt;&#10;                    &lt;field name=&quot;name&quot;/&gt;&#10;                &lt;/group&gt;&#10;            &lt;/sheet&gt;&#10;        &lt;/form&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" description="Create Form View" toReformat="true" toShortenFQNames="true">
+    <variable name="res_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="res_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_tree" value="&lt;record id=&quot;view_$res_id$_tree&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;view.$res_model$.tree&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$res_model$&lt;/field&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &lt;tree string=&quot;$string$&quot;&gt;&#10;            &lt;field name=&quot;name&quot;/&gt;&#10;        &lt;/tree&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" description="Create Tree View" toReformat="true" toShortenFQNames="true">
+    <variable name="res_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="res_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_data" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;flectra&gt;&#10;    &lt;data&gt;&#10;        &#10;        &#10;    &#10;    &lt;/data&gt;&#10;&lt;/flectra&gt;" description="Create the main tags" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_form_inherit" value="&lt;!-- Inherit Form View to Modify it --&gt;&#10;&lt;record id=&quot;view_$res_id$_form_inherit&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;view.$res_model$.form.inherit&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$res_model$&lt;/field&gt;&#10;    &lt;field name=&quot;inherit_id&quot; ref=&quot;$inherit_view_id$&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &#10;        &lt;xpath expr=&quot;$xpath$&quot; position=&quot;$position$&quot;&gt;&#10;            &lt;!-- Add your fields or attributes here --&gt;&#10;        &lt;/xpath&gt;&#10;        &#10;    &lt;/field&gt;&#10;&lt;/record&gt;" description="Inherit Existing Form View" toReformat="true" toShortenFQNames="true">
+    <variable name="res_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="res_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="inherit_view_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="xpath" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="position" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_tree_inherit" value="&lt;record id=&quot;view_$res_id$_tree_inherit&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;view.$res_model$.tree.inherit&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$res_model$&lt;/field&gt;&#10;    &lt;field name=&quot;inherit_id&quot; ref=&quot;$inherit_view_id$&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &#10;        &lt;xpath expr=&quot;$xpath$&quot; position=&quot;$position$&quot;&gt;&#10;            &lt;!-- Add new fields here --&gt;&#10;        &lt;/xpath&gt;&#10;        &#10;    &lt;/field&gt;&#10;&lt;/record&gt;" description="Inherit Existing Tree View" toReformat="true" toShortenFQNames="true">
+    <variable name="res_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="res_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="inherit_view_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="xpath" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="position" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_view_action" value="&lt;record id=&quot;action_$res_id$&quot; model=&quot;ir.actions.act_window&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$res_name$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;ir.actions.act_window&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;$res_model$&lt;/field&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;tree,form&lt;/field&gt;&#10;    &lt;field name=&quot;help&quot; type=&quot;html&quot;&gt;&#10;      &lt;p class=&quot;oe_view_nocontent_create&quot;&gt;&#10;        &lt;!-- Add Text Here --&gt;&#10;      &lt;/p&gt;&lt;p&gt;&#10;        &lt;!-- More details about what a user can do with this object will be OK --&gt; &#10;      &lt;/p&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" description="Create new Action" toReformat="true" toShortenFQNames="true">
+    <variable name="res_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="res_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="res_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_menuitem_root" value="&lt;!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action --&gt;&#10;&lt;menuitem id=&quot;menu_$menu_id$_root&quot; name=&quot;$menu_name$&quot; sequence=&quot;$seq_num$&quot;/&gt;" description="Create New Menu Item in the Upper bar" toReformat="true" toShortenFQNames="true">
+    <variable name="menu_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="menu_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="seq_num" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_menuitem_categ" value="&lt;!-- This Menu Item Must have a parent --&gt;&#10;&lt;menuitem id=&quot;menu_$menu_id$_categ&quot; name=&quot;$menu_name$&quot; parent=&quot;$parent_menu_id$&quot; sequence=&quot;$seq_num$&quot;/&gt;" description="Create New Menu Item for Categroization" toReformat="true" toShortenFQNames="true">
+    <variable name="menu_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="menu_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="parent_menu_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="seq_num" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_menuitem_action" value="&lt;!-- This Menu Item must have a parent and an action --&gt;&#10;&lt;menuitem id=&quot;menu_$menu_id$_action&quot; name=&quot;$menu_name$&quot; parent=&quot;$parent_menu_id$&quot; action=&quot;$action_id$&quot; sequence=&quot;$seq_num$&quot;/&gt;" description="Create New Menu Item for Actions" toReformat="true" toShortenFQNames="true">
+    <variable name="menu_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="menu_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="parent_menu_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="action_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="seq_num" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_group" value="&lt;group&gt;&#10;        &lt;field name=&quot;&quot;/&gt;&#10;    &lt;/group&gt;&#10;" description="Create Group" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_nested_group" value="&lt;group string=&quot;&quot;&gt;&#10;    &lt;group&gt;&#10;        &lt;field name=&quot;&quot;/&gt;&#10;    &lt;/group&gt;&#10;    &lt;group&gt;&#10;        &lt;field name=&quot;&quot;/&gt;&#10;    &lt;/group&gt;&#10;&lt;/group&gt;" description="Create Nested Groups" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_domain" value="domain=&quot;[('$field_name$', '$operator$', $values$), ]&quot;" description="Add domain to your field" toReformat="true" toShortenFQNames="true">
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="operator" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="values" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_security_category" value="&lt;record id=&quot;module_$module_name$&quot; model=&quot;ir.module.category&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$name$&lt;/field&gt;&#10;    &lt;field name=&quot;$sequence$&quot; eval=&quot;1&quot;/&gt;&#10;&lt;/record&gt;" description="Add new Security Category" toReformat="true" toShortenFQNames="true">
+    <variable name="module_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="sequence" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_security_group" value="&lt;record id=&quot;group_$group_id$&quot; model=&quot;res.groups&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$group_name$&lt;/field&gt;&#10;    &lt;field name=&quot;category_id&quot; ref=&quot;$categ_id$&quot;/&gt;&#10;    &lt;field name=&quot;implied_ids&quot; eval=&quot;[(4, ref('base.group_user'))]&quot;/&gt;&#10;&lt;/record&gt;" description="Create new Group, then assign new permissions" toReformat="true" toShortenFQNames="true">
+    <variable name="group_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="group_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="categ_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_security_rule" value="&lt;record id=&quot;$rule_id$&quot; model=&quot;ir.rule&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$rule_name$&lt;/field&gt;&#10;    &lt;field ref=&quot;$res_model$&quot; name=&quot;model_id&quot;/&gt;&#10;    &lt;field name=&quot;domain_force&quot;&gt;[('', '', )]&lt;/field&gt;&#10;    &lt;field name=&quot;perm_write&quot; eval=&quot;1&quot;/&gt;&#10;    &lt;field name=&quot;perm_create&quot; eval=&quot;1&quot;/&gt;&#10;    &lt;field name=&quot;perm_read&quot; eval=&quot;1&quot;/&gt;&#10;    &lt;field name=&quot;perm_unlink&quot; eval=&quot;1&quot;/&gt;&#10;    &lt;!-- You can attach this rule to a specific group, Or make it Global --&gt;&#10;    &lt;field name=&quot;groups&quot; eval=&quot;[(4, ref('group_id'))]&quot;/&gt;&#10;    &lt;!--&lt;field name=&quot;global&quot; eval=&quot;1&quot;/&gt; --&gt;&#10;&lt;/record&gt;" description="Create new Security Rules" toReformat="true" toShortenFQNames="true">
+    <variable name="rule_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="rule_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="res_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_notebook" value="&lt;notebook&gt;&#10;    &lt;page string=&quot;$string$&quot;&gt;&#10;        &lt;group&gt;&#10;            &lt;field name=&quot;$field_name$&quot;/&gt;&#10;        &lt;/group&gt;&#10;    &lt;/page&gt;&#10;&lt;/notebook&gt;" description="Add Notebook and a page" toReformat="true" toShortenFQNames="true">
+    <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_page" value="&lt;page string=&quot;$string$&quot;&gt;&#10;    &lt;group&gt;&#10;        &lt;field name=&quot;$field_name$&quot;/&gt;&#10;    &lt;/group&gt;&#10;&lt;/page&gt;" description="Add new page" toReformat="true" toShortenFQNames="true">
+    <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_form_header" value="&lt;header&gt;&#10;    &lt;button name=&quot;action_$action_button$&quot; string=&quot;$string$&quot; class=&quot;oe_highlight&quot; states=&quot;$states$&quot; type=&quot;$type$&quot;/&gt;&#10;    &lt;field name=&quot;state&quot; widget=&quot;statusbar&quot; statusbar_visible=&quot;$visibility$&quot; statusbar_colors=&quot;{'KEY_IS_STATE':'VALUE_IS_COLOR'}&quot;/&gt;&#10;&lt;/header&gt;" description="Add Form's header with 'state' and buttons" toReformat="true" toShortenFQNames="true">
+    <variable name="action_button" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="states" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="type" expression="" defaultValue="object" alwaysStopAt="true" />
+    <variable name="visibility" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_form_social" value="&lt;div class=&quot;oe_chatter&quot;&gt;&#10;    &lt;field name=&quot;message_follower_ids&quot; widget=&quot;mail_followers&quot;/&gt;&#10;    &lt;field name=&quot;message_ids&quot; widget=&quot;mail_thread&quot;/&gt;&#10;&lt;/div&gt;" description="Add Social Messaging and followers." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_form_title" value="&lt;div class=&quot;oe_title&quot;&gt;&#10;    &lt;label for=&quot;name&quot; class=&quot;oe_edit_only&quot;/&gt;&#10;    &lt;h1&gt;&#10;        &lt;field name=&quot;name&quot; placeholder=&quot;......&quot;/&gt;&#10;    &lt;/h1&gt;&#10;&lt;/div&gt;" description="Add title for the form view" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_declare_qweb_reports" value="&lt;!-- QWeb Reports --&gt;&#10;&lt;!-- NAME &amp; FILE_NAME should be the same --&gt;&#10;        &lt;report&#10;            id=&quot;report_$res_id$_view&quot;&#10;            model=&quot;$res_model$&quot;&#10;            report_type=&quot;qweb-pdf&quot;&#10;            string=&quot;$label$&quot;&#10;            name=&quot;$name$&quot;&#10;            file=&quot;$file_name$&quot;&#10;        /&gt;" description="Add a declaration for new QWeb reports" toReformat="true" toShortenFQNames="true">
+    <variable name="res_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="res_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="file_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="flectra_add_qweb_template" value="&lt;template id=&quot;template_$res_id$_view&quot;&gt;&#10;    &lt;t t-call=&quot;report.html_container&quot;&gt;&#10;        &lt;t t-call=&quot;report.internal_layout&quot;&gt;&#10;        &lt;!-- &lt;t t-call=&quot;report.external_layout&quot;&gt; --&gt;&#10;            &lt;div class=&quot;page&quot;&gt;&#10;                &lt;h2&gt;$report_title$&lt;/h2&gt;&#10;                &lt;!--&#10;                Build your report here!&#10;                Do it in awesome way ;)&#10;                --&gt;&#10;            &lt;/div&gt;&#10;        &lt;/t&gt;&#10;    &lt;/t&gt;&#10;&lt;/template&gt;&#10;&#10;" description="Add the main structure of the QWeb Reports" toReformat="true" toShortenFQNames="true">
+    <variable name="res_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="report_title" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_qweb_table" value="&lt;table class=&quot;table table-condensed&quot;&gt;&#10;    &lt;thead&gt;&#10;        &lt;tr&gt;&#10;            &lt;th&gt;HEAD_1&lt;/th&gt;&#10;            &lt;th class=&quot;text-right&quot;&gt;HEAD_2&lt;/th&gt;&#10;            &lt;th class=&quot;text-right&quot;&gt;HEAD_3&lt;/th&gt;&#10;            &lt;th class=&quot;text-right&quot;&gt;HEAD_4&lt;/th&gt;&#10;        &lt;/tr&gt;&#10;    &lt;/thead&gt;&#10;    &lt;tbody&gt;&#10;        &lt;tr t-foreach=&quot;o.OBJECTS&quot; t-as=&quot;OBJECT&quot;&gt;&#10;            &lt;t t-if=&quot;len(taxline['level']) &gt; 5&quot;&gt;&#10;                &lt;t t-set=&quot;style&quot; t-value=&quot;'font-weight:normal;'&quot;/&gt;&#10;            &lt;/t&gt;&#10;            &lt;t t-if=&quot;not len(taxline['level']) &gt; 5&quot;&gt;&#10;                &lt;t t-set=&quot;style&quot; t-value=&quot;'font-weight:bold;'&quot;/&gt;&#10;            &lt;/t&gt;&#10;&#10;            &lt;td&gt;&#10;                &lt;span t-att-style=&quot;style&quot; t-esc=&quot;taxline['level']&quot; style=&quot;color:white;&quot;/&gt;&#10;                &lt;span t-att-style=&quot;style&quot; t-if=&quot;taxline['code']&quot; t-esc=&quot;taxline['code']&quot;/&gt;&#10;                &lt;span t-att-style=&quot;style&quot; t-esc=&quot;taxline['name']&quot;/&gt;&#10;            &lt;/td&gt;&#10;            &lt;td class=&quot;text-right&quot;&gt;&lt;span t-att-style=&quot;style&quot; t-esc=&quot;taxline['debit']&quot;/&gt;&lt;/td&gt;&#10;            &lt;td class=&quot;text-right&quot;&gt;&lt;span t-att-style=&quot;style&quot; t-esc=&quot;taxline['credit']&quot;/&gt;&lt;/td&gt;&#10;            &lt;td class=&quot;text-right&quot;&gt;&#10;                &lt;span t-att-style=&quot;style&quot; t-esc=&quot;formatLang(taxline['tax_amount'], currency_obj=res_company.currency_id)&quot;/&gt;&#10;            &lt;/td&gt;&#10;        &lt;/tr&gt;        &#10;    &lt;/tbody&gt;&#10;&lt;/table&gt;&#10;" description="Add the main structure of the QWeb Tables" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="flectra_search" value="&lt;record id=&quot;view_$res_id$_search&quot; model=&quot;ir.ui.view&quot;&gt;&#10;   &lt;field name=&quot;name&quot;&gt;view.$res_model$.search&lt;/field&gt;&#10;   &lt;field name=&quot;model&quot;&gt;$res_model$&lt;/field&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &lt;search string=&quot;$string$&quot;&gt;&#10;      &lt;field name=&quot;name&quot; string=&quot;&quot; domain=&quot;[()]&quot;/&gt;&#10;    &lt;/search&gt;&#10;   &lt;/field&gt;&#10;&lt;/record&gt;" description="Create Search View" toReformat="true" toShortenFQNames="true">
+    <variable name="res_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="res_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_kanban" value="&lt;record id=&quot;view_$res_id$_kanban&quot; model=&quot;ir.ui.view&quot;&gt;&#10; &lt;field name=&quot;name&quot;&gt;view.$res_model$.kandan&lt;/field&gt;&#10;  &lt;field name=&quot;model&quot;&gt;$res_model$&lt;/field&gt;&#10; &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;kanban&gt;&#10;   &lt;field name=&quot;name&quot;/&gt;&#10; &lt;templates&gt;&#10; &lt;t t-name=&quot;kanban-box&quot;&gt;&#10; &lt;/t&gt;&#10; &lt;/templates&gt;&#10; &lt;/kanban&gt;&#10; &lt;/field&gt;&#10;&lt;/record&gt;" description="Create Kanban View" toReformat="true" toShortenFQNames="true">
+    <variable name="res_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="res_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_xpath" value="&lt;xpath expr=&quot;//field[@name='$field_name$']&quot; position=&quot;$position$&quot;&gt;&#10;    &lt;!-- Add your fields or attributes here --&gt;&#10;&lt;/xpath&gt;" description="Add the structure of xpath" toReformat="true" toShortenFQNames="true">
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="position" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_xpath_attributes" value="&lt;xpath expr=&quot;//field[@name='$field_name$']&quot; position=&quot;$attributes$&quot;&gt;&#10;    &lt;attribute name=&quot;required&quot;&gt;1&lt;/attribute&gt;&#10;    &lt;attribute name=&quot;readonly&quot;&gt;1&lt;/attribute&gt;&#10;&lt;/xpath&gt;" description="Add the structure of xpath with attributes" toReformat="true" toShortenFQNames="true">
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="attributes" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_button" value="&lt;button name=&quot;action_$action_button$&quot; type=&quot;$type$&quot; string=&quot;$field_name$&quot;/&gt;" description="Add Flectra button" toReformat="true" toShortenFQNames="true">
+    <variable name="action_button" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="type" expression="" defaultValue="object" alwaysStopAt="true" />
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_field" value="&lt;field name=&quot;$field_name$&quot;/&gt;" description="Add commun field on view" toReformat="true" toShortenFQNames="true">
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_field_state" value="&lt;field name=&quot;state&quot; widget=&quot;statusbar&quot; statusbar_visible=&quot;$visibility$&quot;/&gt;" description="Add state field with progressbar on view" toReformat="true" toShortenFQNames="true">
+    <variable name="visibility" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_button_box" value="&lt;div class=&quot;oe_button_box&quot; name=&quot;expense_button_box&quot;&gt;&#10;        &lt;button name=&quot;toggle_active&quot; &#10;                type=&quot;object&quot;&#10;                confirm=&quot;(Un)archiving a project automatically (un)archives its tasks and issues. Do you want to proceed?&quot;&#10;                class=&quot;oe_stat_button&quot; &#10;                icon=&quot;fa-archive&quot;&gt;&#10;                &lt;field name=&quot;active&quot; widget=&quot;boolean_button&quot; options='{&quot;terminology&quot;: &quot;archive&quot;}'/&gt;&#10;        &lt;/button&gt;&#10;&lt;/div&gt;" description="Add Button Box on View" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_class" value="class $class_name$(models.Model):&#10;    _name = '$model_name$'&#10;    _rec_name = 'name'&#10;    _description = '$description$'&#10;&#10;    name = fields.Char()&#10;" description="Create New Flectra Class" toReformat="true" toShortenFQNames="true">
+    <variable name="class_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="model_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_field_integer" value="$new_field$ = fields.Integer(string=&quot;$field_name$&quot;, required=False)" description="Add new field of type Integer" toReformat="true" toShortenFQNames="true">
+    <variable name="new_field" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_field_char" value="$new_field$ = fields.Char(string=&quot;$field_name$&quot;, required=False)" description="Add new field of type Char" toReformat="true" toShortenFQNames="true">
+    <variable name="new_field" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_field_text" value="$new_field$ = fields.Text(string=&quot;$field_name$&quot;, required=False)" description="Add new field of type Text" toReformat="true" toShortenFQNames="true">
+    <variable name="new_field" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_field_many2one" value="$new_field$ = fields.Many2one(comodel_name=&quot;$co_model$&quot;, string=&quot;$field_name$&quot;, required=False)" description="Add new field of type Many2one" toReformat="true" toShortenFQNames="true">
+    <variable name="new_field" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="co_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_field_one2many" value="$new_field$ = fields.One2many(comodel_name=&quot;$co_model$&quot;, inverse_name=&quot;$inv_name$&quot;, string=&quot;$field_name$&quot;, required=False)" description="Add new field of type One2many" toReformat="true" toShortenFQNames="true">
+    <variable name="new_field" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="co_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="inv_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_field_boolean" value="$new_field$ = fields.Boolean(string=&quot;$field_name$&quot;)" description="Add new field of type Boolean" toReformat="true" toShortenFQNames="true">
+    <variable name="new_field" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_field_html" value="$new_field$ = fields.HTML(string=&quot;$field_name$&quot;)" description="Add new field of type HTML" toReformat="true" toShortenFQNames="true">
+    <variable name="new_field" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_field_float" value="$new_field$ = fields.Float(string=&quot;$field_name$&quot;, required=False)" description="Add new field of type Float" toReformat="true" toShortenFQNames="true">
+    <variable name="new_field" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_field_date" value="$new_field$ = fields.Date(string=&quot;$field_name$&quot;, required=False)" description="Add new field of type Date" toReformat="true" toShortenFQNames="true">
+    <variable name="new_field" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_field_datetime" value="$new_field$ = fields.Datetime(string=&quot;$field_name$&quot;, required=False)" description="Add new field of type DateTime" toReformat="true" toShortenFQNames="true">
+    <variable name="new_field" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_field_selection" value="state = fields.Selection(string=&quot;$field_name$&quot;, selection=[('', ''), ('', ''), ], required=False)" description="Add new field of type Selection" toReformat="true" toShortenFQNames="true">
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_field_many2many" value="$new_field$ = fields.Many2many(comodel_name=&quot;$co_model$&quot;, relation=&quot;$rel_model$&quot;, column1=&quot;$col_1$&quot;, column2=&quot;$col_2$&quot;, string=&quot;$field_name$&quot;)" description="Add new field of type Many2many" toReformat="true" toShortenFQNames="true">
+    <variable name="new_field" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="co_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="rel_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="col_1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="col_2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_class_inherit" value="class $class$(models.Model):&#10;    _name = '$model_name$'&#10;    _inherit = '$inherit_model$'&#10;&#10;    name = fields.Char()&#10;" description="Inherit/Extend Existing Flectra Object" toReformat="true" toShortenFQNames="true">
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="model_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="inherit_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_field_binary" value="$new_field$ = fields.Binary(string=&quot;$field_name$&quot;)" description="Add new field of type Binary" toReformat="true" toShortenFQNames="true">
+    <variable name="new_field" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_method_onchange" value="@api.onchange('$field_name$')&#10;def _onchange_$field_name$(self):&#10;    pass" description="Add an onchange method" toReformat="true" toShortenFQNames="true">
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_method_compute_field" value="@api.one&#10;@api.depends('$field_name$')&#10;def _compute_$field_name$(self):&#10;    &quot;&quot;&quot;&#10;    @api.depends() should contain all fields that will be used in the calculations.&#10;    &quot;&quot;&quot;&#10;    pass" description="Add a method to compute the computed fields" toReformat="true" toShortenFQNames="true">
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_manifest" value="{&#10;    'name': '$app_name$',&#10;    'summary': '$app_summary$',&#10;    'version': '1.0',&#10;    'category': 'Custom',&#10;    'author': 'FlectraHQ',&#10;    'website': 'https://flectrahq.com',&#10;    'license': 'LGPL-3',&#10;    'depends': [],&#10;    'data': [],&#10;    'demo': [],&#10;    'installable': True,&#10;    'auto_install': False,&#10;    'application': True&#10;}" description="Create Flectra project manifest" toReformat="true" toShortenFQNames="true">
+    <variable name="app_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="app_summary" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_import" value="from flectra import api, fields, models &#10;" description="Add basic Flectra import for new Flectra versions" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_method_create" value="@api.model&#10;def create(self, values):&#10;    # Add code here&#10;    return super($class_name$, self).create(values)" description="Add a method create" toReformat="true" toShortenFQNames="true">
+    <variable name="class_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_method_write" value="@api.multi&#10;def write(self, values):&#10;    # Add code here  &#10;    return super($class_name$, self).write(values)" description="Add a method write" toReformat="true" toShortenFQNames="true">
+    <variable name="class_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_complete_view" value="&lt;record id=&quot;view_$res_id$_form&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;view.$res_model$.form&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$res_model$&lt;/field&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &lt;form string=&quot;$string$&quot;&gt;&#10;            &lt;sheet&gt;&#10;                &lt;group&gt;&#10;                    &lt;field name=&quot;name&quot;/&gt;&#10;                &lt;/group&gt;&#10;            &lt;/sheet&gt;&#10;        &lt;/form&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;  &lt;record id=&quot;view_$res_id$_tree&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;view.$res_model$.tree&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$res_model$&lt;/field&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &lt;tree string=&quot;$string$&quot;&gt;&#10;            &lt;field name=&quot;name&quot;/&gt;&#10;        &lt;/tree&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;    &lt;record id=&quot;view_$res_id$_search&quot; model=&quot;ir.ui.view&quot;&gt;&#10;   &lt;field name=&quot;name&quot;&gt;view.$res_model$.search&lt;/field&gt;&#10;   &lt;field name=&quot;model&quot;&gt;$res_model$&lt;/field&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &lt;search string=&quot;$string$&quot;&gt;&#10;      &lt;field name=&quot;name&quot; string=&quot;&quot; domain=&quot;[()]&quot;/&gt;&#10;    &lt;/search&gt;&#10;   &lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;    &lt;record id=&quot;view_$res_id$_kanban&quot; model=&quot;ir.ui.view&quot;&gt;&#10; &lt;field name=&quot;name&quot;&gt;view.$res_model$.kandan&lt;/field&gt;&#10;  &lt;field name=&quot;model&quot;&gt;$res_model$&lt;/field&gt;&#10; &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;    &lt;kanban&gt;&#10;   &lt;field name=&quot;name&quot;/&gt;&#10; &lt;templates&gt;&#10; &lt;t t-name=&quot;kanban-box&quot;&gt;&#10; &lt;/t&gt;&#10; &lt;/templates&gt;&#10; &lt;/kanban&gt;&#10; &lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10;    &lt;record id=&quot;action_$res_id$&quot; model=&quot;ir.actions.act_window&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$string$&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;ir.actions.act_window&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;$res_model$&lt;/field&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;tree,form&lt;/field&gt;&#10;    &lt;field name=&quot;help&quot; type=&quot;html&quot;&gt;&#10;      &lt;p class=&quot;oe_view_nocontent_create&quot;&gt;&#10;        &lt;!-- Add Text Here --&gt;&#10;      &lt;/p&gt;&lt;p&gt;&#10;        &lt;!-- More details about what a user can do with this object will be OK --&gt; &#10;      &lt;/p&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;&#10;&#10; &lt;!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action --&gt;&#10;&#10;   &lt;menuitem id=&quot;menu_$res_id$_root&quot; name=&quot;$menu_name$&quot; sequence=&quot;$seq_num$&quot;/&gt;&#10; &lt;!-- This Menu Item Must have a parent --&gt;&#10;&lt;menuitem id=&quot;menu_$res_id$_sub&quot; name=&quot;$menu_categ_name$&quot; parent=&quot;menu_$res_id$_root&quot; sequence=&quot;$seq_categ_num$&quot;/&gt;&#10;   &lt;!-- This Menu Item must have a parent and an action --&gt;&#10;&lt;menuitem id=&quot;menu_$res_id$_main&quot; name=&quot;$menu_action_name$&quot; parent=&quot;menu_$res_id$_sub&quot; action=&quot;action_$res_id$&quot; sequence=&quot;$seq_action_num$&quot;/&gt;&#10;" description="Create Form View" toReformat="true" toShortenFQNames="true">
+    <variable name="res_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="res_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="menu_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="seq_num" expression="" defaultValue="&quot;16&quot;" alwaysStopAt="true" />
+    <variable name="menu_categ_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="seq_categ_num" expression="" defaultValue="&quot;16&quot;" alwaysStopAt="true" />
+    <variable name="menu_action_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="seq_action_num" expression="" defaultValue="&quot;16&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_sequence" value="&lt;record id=&quot;seq_$module_name$&quot; model=&quot;ir.sequence&quot;&gt;&#10; &lt;field name=&quot;name&quot;&gt;$name$&lt;/field&gt;&#10;    &lt;field name=&quot;code&quot;&gt;$code$&lt;/field&gt;&#10;    &lt;field name=&quot;prefix&quot;&gt;$prefix$&lt;/field&gt;&#10;    &lt;field name=&quot;suffix&quot;&gt;$suffix$&lt;/field&gt;&#10;    &lt;field name=&quot;padding&quot;&gt;$padding$&lt;/field&gt;&#10;  &lt;field name=&quot;number_increment&quot;&gt;$number_increment$&lt;/field&gt;&#10;    &lt;field name=&quot;number_next_actual&quot;&gt;$number_next_actual$&lt;/field&gt;&#10;&lt;/record&gt;" description="Define Sequence" toReformat="true" toShortenFQNames="true">
+    <variable name="module_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="prefix" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="suffix" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="padding" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="number_increment" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="number_next_actual" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_email_template" value="&lt;record id=&quot;email_template_$eid$&quot; model=&quot;mail.template&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$name$&lt;/field&gt;&#10;    &lt;field name=&quot;email_from&quot;&gt;$email_from$&lt;/field&gt;&#10;    &lt;field name=&quot;subject&quot;&gt;$subject$&lt;/field&gt;&#10;    &lt;field name=&quot;partner_to&quot;&gt;$partner_to$&lt;/field&gt;&#10;     &lt;field name=&quot;model_id&quot; ref=&quot;$module_name$.model_$model_name$&quot;/&gt;&#10;    &lt;field name=&quot;lang&quot;&gt;${object.partner_id.lang}&lt;/field&gt;&#10;    &lt;field name=&quot;body_html&quot;&gt;$body_html$&lt;/field&gt;&#10;&lt;/record&gt;" description="Define Sequence" toReformat="true" toShortenFQNames="true">
+    <variable name="eid" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="email_from" expression="" defaultValue="&quot;${(object.user_id.email and '%s &lt;%s&gt;' % (object.user_id.name, object.user_id.email) or '')|safe}&quot;" alwaysStopAt="true" />
+    <variable name="subject" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="partner_to" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="module_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="model_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="body_html" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_calendar" value="&lt;record id=&quot;view_$res_id$_calendar&quot; model=&quot;ir.ui.view&quot;&gt;&#10; &lt;field name=&quot;name&quot;&gt;view.$res_model$.calendar&lt;/field&gt;&#10; &lt;field name=&quot;model&quot;&gt;$res_model$&lt;/field&gt;&#10;  &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;   &lt;calendar string=&quot;$string$&quot; date_start=&quot;$date_start$&quot; date_delay=&quot;$date_delay$&quot;&gt;&#10;   &lt;field name=&quot;name&quot;/&gt;&#10;   &lt;/calendar&gt;&#10;  &lt;/field&gt;&#10;&lt;/record&gt;" description="Create Calendar View" toReformat="true" toShortenFQNames="true">
+    <variable name="res_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="res_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="date_start" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="date_delay" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_graph" value="&lt;record id=&quot;view_$res_id$_graph&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;view.$res_model$.graph&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$res_model$&lt;/field&gt;&#10;  &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;   &lt;graph string=&quot;$string$&quot; type=&quot;$type$&quot; orientation=&quot;$orientation$&quot;&gt;&#10;    &lt;field name=&quot;name&quot;/&gt;&#10;   &lt;/graph&gt;&#10; &lt;/field&gt;&#10;&lt;/record&gt;" description="Create Graph View" toReformat="true" toShortenFQNames="true">
+    <variable name="res_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="res_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="orientation" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_pivot" value="&lt;record id=&quot;view_$res_id$_pivot&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;view.$res_model$.pivot&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$res_model$&lt;/field&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &lt;pivot string=&quot;$string$&quot;&gt;&#10;            &lt;field name=&quot;name&quot;/&gt;&#10;        &lt;/pivot&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" description="Create Pivot View" toReformat="true" toShortenFQNames="true">
+    <variable name="res_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="res_model" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flectra_class_wizard" value="class $class_code$(models.TransientModel):&#10;    _name = '$class_name$'&#10;    _description = '$description$'&#10;&#10;" description="Wizard Class" toReformat="true" toShortenFQNames="true">
+    <variable name="class_code" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="class_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_class_report" value="class $class_code$(models.AbstractModel):&#10;    _name = 'report.$module_name$.$report_name$'&#10;    _description = '$description$'&#10;" description="Report Class" toReformat="true" toShortenFQNames="true">
+    <variable name="class_code" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="module_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="report_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="flectra_method_report_value" value="@api.model&#10;def get_report_values(self, docids, data=None):&#10;    # Add code here  &#10;    pass" description="Design Report Data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -248,7 +248,7 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="odoo_form_social" value="&lt;div class=&quot;oe_chatter&quot;&gt;&#10;    &lt;field name=&quot;message_follower_ids&quot; widget=&quot;mail_followers&quot;/&gt;&#10;    &lt;field name=&quot;message_ids&quot; widget=&quot;mail_thread&quot;/&gt;&#10;&lt;/div&gt;" description="Add Social Messaging and followers." toReformat="false" toShortenFQNames="true">
+  <template name="odoo_form_social" value="&lt;div class=&quot;oe_chatter&quot;&gt;&#10;    &lt;field name=&quot;message_follower_ids&quot; widget=&quot;mail_followers&quot;/&gt;&#10;    &lt;field name=&quot;activity_ids&quot; widget=&quot;mail_activity&quot;/&gt;&#10;    &lt;field name=&quot;message_ids&quot; widget=&quot;mail_thread&quot;/&gt;&#10;&lt;/div&gt;" description="Add Social Messaging and followers." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XML" value="true" />
     </context>
