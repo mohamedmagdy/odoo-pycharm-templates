@@ -248,7 +248,7 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="odoo_form_social" value="&lt;div class=&quot;oe_chatter&quot;&gt;&#10;    &lt;field name=&quot;message_follower_ids&quot; widget=&quot;mail_followers&quot;/&gt;&#10;    &lt;field name=&quot;activity_ids&quot; widget=&quot;mail_activity&quot;/&gt;&#10;    &lt;field name=&quot;message_ids&quot; widget=&quot;mail_thread&quot;/&gt;&#10;&lt;/div&gt;" description="Add Social Messaging and followers." toReformat="false" toShortenFQNames="true">
+  <template name="odoo_form_social" value="&lt;div class=&quot;oe_chatter&quot;&gt;&#10;    &lt;field name=&quot;message_follower_ids&quot; widget=&quot;mail_followers&quot;/&gt;&#10;    &lt;field name=&quot;message_ids&quot; widget=&quot;mail_thread&quot;/&gt;&#10;&lt;/div&gt;" description="Add Social Messaging and followers." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XML" value="true" />
     </context>
@@ -379,6 +379,14 @@
     <variable name="action_xml_id" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="odoo_field_monetary" value="$field_name$ = fields.Monetary(string=&quot;$field_label$&quot;, currency_field=&quot;$currency_field$&quot;,required=False, )" description="Add new field of type Monetary" toReformat="false" toShortenFQNames="true">
+    <variable name="field_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="field_label" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="currency_field" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
     </context>
   </template>
 </templateSet>
